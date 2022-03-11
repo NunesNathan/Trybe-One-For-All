@@ -1,8 +1,8 @@
 {
   "coluna_usuario": "user_id",
   "tabela_que_contem_usuario": "users",
-  "coluna_plano": "sevice_id",
-  "tabela_que_contem_plano": "sevices",
+  "coluna_plano": "service_id",
+  "tabela_que_contem_plano": "services",
   "coluna_historico_de_reproducoes": "music_id",
   "tabela_que_contem_historico_de_reproducoes": "play_history",
   "coluna_seguindo_artistas": "singer_id",
