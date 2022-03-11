@@ -6,7 +6,7 @@ CREATE DATABASE SpotifyClone;
 CREATE TABLE SpotifyClone.services (
   service_id INT NOT NULL AUTO_INCREMENT,
   service_name VARCHAR(25) NOT NULL,
-  service_price INT NOT NULL,
+  service_price DECIMAL(4,2) NOT NULL,
   PRIMARY KEY (service_id)
 ) engine = InnoDB;
 
@@ -69,10 +69,10 @@ CREATE TABLE SpotifyClone.play_history (
 ) engine = InnoDB;
 
 
-INSERT INTO SpotifyClone.services (service_id, service_name, service_price) VALUES (1, 'gratuito', 0);
-INSERT INTO SpotifyClone.services (service_id, service_name, service_price) VALUES (2, 'familiar', 799);
-INSERT INTO SpotifyClone.services (service_id, service_name, service_price) VALUES (3, 'universitario', 599);
-INSERT INTO SpotifyClone.services (service_id, service_name, service_price) VALUES (4, 'pessoal', 699);
+INSERT INTO SpotifyClone.services (service_id, service_name, service_price) VALUES (1, 'gratuito', 0.00);
+INSERT INTO SpotifyClone.services (service_id, service_name, service_price) VALUES (2, 'familiar', 7.99);
+INSERT INTO SpotifyClone.services (service_id, service_name, service_price) VALUES (3, 'universitario', 5.99);
+INSERT INTO SpotifyClone.services (service_id, service_name, service_price) VALUES (4, 'pessoal', 6.99);
 
 INSERT INTO SpotifyClone.singers (singer_id, singer_name) VALUES (1, 'Walter Phoenix');
 INSERT INTO SpotifyClone.singers (singer_id, singer_name) VALUES (2, 'Freedie Shannon');
