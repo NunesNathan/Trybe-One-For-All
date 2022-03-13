@@ -6,4 +6,3 @@ SELECT ROUND(MIN(service_price), 2) AS 'faturamento_minimo',
  ROUND(SUM(service_price), 2) AS 'faturamento_total'
  FROM SpotifyClone.services AS Services
  INNER JOIN SpotifyClone.users AS Users ON Users.service_id = Services.service_id;
- 
